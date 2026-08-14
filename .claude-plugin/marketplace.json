@@ -7,11 +7,8 @@
   "plugins": [
     {
       "name": "korean-law",
-      "source": {
-        "source": "github",
-        "repo": "chrisryugj/korean-law-mcp"
-      },
-      "description": "국가법령정보센터(법제처) 법령·시행령·조례·판례·별표·해석례 실시간 조회. 인용 검증으로 환각 방지. 설치 시 법제처 Open API 인증키를 입력해야 하며 Node.js 20 이상이 필요하다.",
+      "source": "./plugins/korean-law",
+      "description": "국가법령정보센터(법제처) 법령·시행령·조례·판례·별표·해석례 실시간 조회. 인용 검증으로 환각 방지. 설치 시 법제처 인증키 입력 필요. Node.js 20 이상 필요.",
       "version": "4.4.3",
       "category": "법무",
       "tags": ["법령", "판례", "조례", "법제처"],
