@@ -1,0 +1,41 @@
+{
+  "name": "korean-law",
+  "version": "4.4.3",
+  "description": "국가법령정보센터(법제처) 법령·시행령·조례·판례·별표·해석례 실시간 조회. 인용 검증으로 환각 방지. 설치 시 법제처 인증키 입력 필요.",
+  "author": {
+    "name": "Chris",
+    "email": "ryuseungin@gmail.com",
+    "url": "https://github.com/chrisryugj"
+  },
+  "homepage": "https://github.com/chrisryugj/korean-law-mcp",
+  "repository": "https://github.com/chrisryugj/korean-law-mcp",
+  "license": "MIT",
+  "keywords": [
+    "korean-law",
+    "법령",
+    "판례",
+    "법제처",
+    "legal-ai",
+    "mcp"
+  ],
+  "mcpServers": {
+    "korean-law": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "korean-law-mcp@latest"
+      ],
+      "env": {
+        "LAW_OC": "${user_config.api_key}"
+      }
+    }
+  },
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "법제처 API 키 (LAW_OC)",
+      "description": "법제처 OpenAPI 인증키. https://open.law.go.kr/LSO/openApi/guideResult.do 에서 무료 발급받아 본인 키를 입력하세요.",
+      "sensitive": true
+    }
+  }
+}
