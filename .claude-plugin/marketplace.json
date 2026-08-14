@@ -1,0 +1,22 @@
+{
+  "name": "hytc-marketplace",
+  "owner": {
+    "name": "HYTC 경영기획실 인사총무파트",
+    "url": "https://github.com/hytc-inc"
+  },
+  "plugins": [
+    {
+      "name": "korean-law",
+      "source": {
+        "source": "github",
+        "repo": "chrisryugj/korean-law-mcp"
+      },
+      "description": "국가법령정보센터(법제처) 법령·시행령·조례·판례·별표·해석례 실시간 조회. 인용 검증으로 환각 방지. 사용하려면 법제처 Open API 인증키 발급 필요(무료).",
+      "version": "4.10.0",
+      "author": {
+        "name": "Chris (chrisryugj)"
+      },
+      "homepage": "https://github.com/chrisryugj/korean-law-mcp"
+    }
+  ]
+}
